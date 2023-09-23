@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <main>
+    <section class="main">
+      <p class="main__info">говорите</p>
+      <img class="main__image-neznaika" src="./images/I_do_not_now.png" alt="image">
+      <div class="main__block-image-record">
+        <img class="main__image-record" src="./images/recording_vector/VectorGray.svg" alt="image">
+        <img class="main__image-record_blue" src="./images/recording_vector/VectorBlue.svg" alt="image">
+      </div>
+      <input class="main__input" type="text" value="" placeholder="| ввести текстом">
+      <button class="main__submit">Отправить</button>
+      <button class="main__block-record">
+        <img class="main__micro_no-active" src="./images/microRed.svg" alt="micro">
+        <img class="main__micro_active" src="./images/microWhite.svg" alt="micro">
+        <img class="main__micro_completed" src="./images/vseOk.svg" alt="OK">
+      </button>
+    </section>
+  </main>
+  <button id="startRecording">Начать запись</button>
+  <button id="stopRecording" disabled>Остановить запись</button>
+  <audio controls id="audioPlayer" style="display:none;"></audio>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
